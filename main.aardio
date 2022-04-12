@@ -8,24 +8,25 @@ import process;
 import inet.http;
 import win.ui.tooltip;
 /*DSG{{*/
-mainForm = win.form(text="图片藏文件";right=355;bottom=205;bgcolor=16777215;border="thin";max=false;mode="popup")
+mainForm = win.form(text= "图片藏文件";right=427;bottom=205;bgcolor=16777215;border= "thin";max=false;mode= "popup")
 mainForm.add(
-copyb={cls="plus";text="CMD合并";left=115;top=127;right=217;bottom=158;align="left";color=14772545;font=LOGFONT(h=-14);iconStyle={align="left";font=LOGFONT(h=-15;name='FontAwesome')};iconText='\uF0C8 ';notify=1;textPadding={left=24};z=15};
-esc={cls="plus";text="退出";left=248;top=161;right=338;bottom=191;align="left";bgcolor=-2004671;border={radius=5};color=16777215;db=1;font=LOGFONT(h=-13);iconStyle={align="left";font=LOGFONT(h=-13;name='FontAwesome');padding={left=20}};iconText='\uF00D';notify=1;textPadding={left=39};z=6};
-exp={cls="plus";text="解开";left=132;top=161;right=222;bottom=191;align="left";bgcolor=-2004671;border={radius=5};color=16777215;db=1;font=LOGFONT(h=-13);iconStyle={align="left";font=LOGFONT(h=-13;name='FontAwesome');padding={left=20}};iconText='\uF065';notify=1;textPadding={left=39};z=10};
-filePath={cls="plus";left=78;top=61;right=298;bottom=87;align="right";bgcolor=16777215;border={bottom=1;color=-6908266};editable="edit";iconColor=14772545;textPadding={top=6;bottom=2};z=5};
-gen={cls="plus";text="生成";left=15;top=161;right=105;bottom=191;align="left";bgcolor=-2004671;border={radius=5};color=16777215;db=1;font=LOGFONT(h=-13);iconStyle={align="left";font=LOGFONT(h=-13;name='FontAwesome');padding={left=20}};iconText='\uF04B';notify=1;textPadding={left=39};z=1};
-genPath={cls="plus";left=78;top=98;right=298;bottom=124;align="right";bgcolor=16777215;border={bottom=1;color=-6908266};editable="edit";iconColor=14772545;textPadding={top=6;bottom=2};z=12};
-mp4={cls="plus";text="存MP4";left=279;top=23;right=381;bottom=54;align="left";color=14772545;font=LOGFONT(h=-14);iconStyle={align="left";font=LOGFONT(h=-15;name='FontAwesome')};iconText='\uF0C8 ';notify=1;textPadding={left=24};z=16};
-picPath={cls="plus";left=78;top=23;right=234;bottom=49;align="right";bgcolor=16777215;border={bottom=1;color=-6908266};editable="edit";iconColor=14772545;textPadding={top=6;bottom=2};z=2};
-plus={cls="plus";text="94FBR.NET出品";left=235;top=131;right=352;bottom=155;color=32768;font=LOGFONT(h=-13);link=1;notify=1;textPadding={left=5};z=14};
-plus2={cls="plus";text="...";left=304;top=101;right=338;bottom=124;bgcolor=-2004671;border={radius=5};color=16777215;font=LOGFONT(h=-13);notify=1;z=13};
-plus5={cls="plus";text="...";left=239;top=27;right=273;bottom=50;bgcolor=-2004671;border={radius=5};color=16777215;font=LOGFONT(h=-13);notify=1;z=7};
-plus6={cls="plus";text="...";left=304;top=64;right=338;bottom=87;bgcolor=-2004671;border={radius=5};color=16777215;font=LOGFONT(h=-13);notify=1;z=8};
-randompic={cls="plus";text="随机图片";left=15;top=127;right=113;bottom=158;align="left";color=14772545;font=LOGFONT(h=-14);iconStyle={align="left";font=LOGFONT(h=-15;name='FontAwesome')};iconText='\uF0C8 ';notify=1;textPadding={left=24};z=9};
-static={cls="static";text="图片路径";left=13;top=27;right=73;bottom=48;transparent=1;z=3};
-static2={cls="static";text="文件路径";left=13;top=64;right=73;bottom=90;transparent=1;z=4};
-static3={cls="static";text="生成路径";left=13;top=101;right=73;bottom=127;transparent=1;z=11}
+copyb={cls= "plus";text= "CMD合并";left=214;top=127;right=316;bottom=158;align= "left";color=14772545;font=LOGFONT(h=-14);iconStyle={align= "left";font=LOGFONT(h=-15;name= 'FontAwesome')};iconText= '\uF0C8 ';notify=1;textPadding={left=24};z=15};
+esc={cls= "plus";text= "退出";left=324;top=161;right=414;bottom=191;align= "left";bgcolor=-2004671;border={radius=5};color=16777215;db=1;font=LOGFONT(h=-13);iconStyle={align= "left";font=LOGFONT(h=-13;name= 'FontAwesome');padding={left=20}};iconText= '\uF00D';notify=1;textPadding={left=39};z=6};
+exp={cls= "plus";text= "解开";left=171;top=161;right=261;bottom=191;align= "left";bgcolor=-2004671;border={radius=5};color=16777215;db=1;font=LOGFONT(h=-13);iconStyle={align= "left";font=LOGFONT(h=-13;name= 'FontAwesome');padding={left=20}};iconText= '\uF065';notify=1;textPadding={left=39};z=10};
+filePath={cls= "plus";left=78;top=61;right=366;bottom=87;align= "right";bgcolor=16777215;border={bottom=1;color=-6908266};editable= "edit";iconColor=14772545;textPadding={top=6;bottom=2};z=5};
+gen={cls= "plus";text= "生成";left=15;top=161;right=105;bottom=191;align= "left";bgcolor=-2004671;border={radius=5};color=16777215;db=1;font=LOGFONT(h=-13);iconStyle={align= "left";font=LOGFONT(h=-13;name= 'FontAwesome');padding={left=20}};iconText= '\uF04B';notify=1;textPadding={left=39};z=1};
+genPath={cls= "plus";left=78;top=98;right=366;bottom=124;align= "right";bgcolor=16777215;border={bottom=1;color=-6908266};editable= "edit";iconColor=14772545;textPadding={top=6;bottom=2};z=12};
+mp4={cls= "plus";text= "存MP4";left=349;top=23;right=451;bottom=54;align= "left";color=14772545;font=LOGFONT(h=-14);iconStyle={align= "left";font=LOGFONT(h=-15;name= 'FontAwesome')};iconText= '\uF0C8 ';notify=1;textPadding={left=24};z=16};
+picPath={cls= "plus";left=78;top=23;right=302;bottom=49;align= "right";bgcolor=16777215;border={bottom=1;color=-6908266};editable= "edit";iconColor=14772545;textPadding={top=6;bottom=2};z=2};
+plus={cls= "plus";text= "94FBR.NET出品";left=305;top=131;right=422;bottom=155;color=32768;font=LOGFONT(h=-13);link=1;notify=1;textPadding={left=5};z=14};
+plus2={cls= "plus";text= "...";left=374;top=101;right=408;bottom=124;bgcolor=-2004671;border={radius=5};color=16777215;font=LOGFONT(h=-13);notify=1;z=13};
+plus5={cls= "plus";text= "...";left=309;top=27;right=343;bottom=50;bgcolor=-2004671;border={radius=5};color=16777215;font=LOGFONT(h=-13);notify=1;z=7};
+plus6={cls= "plus";text= "...";left=374;top=64;right=408;bottom=87;bgcolor=-2004671;border={radius=5};color=16777215;font=LOGFONT(h=-13);notify=1;z=8};
+randompic={cls= "plus";text= "Baidu随机图";left=15;top=127;right=129;bottom=158;align= "left";color=14772545;font=LOGFONT(h=-14);iconStyle={align= "left";font=LOGFONT(h=-15;name= 'FontAwesome')};iconText= '\uF0C8 ';notify=1;textPadding={left=24};z=9};
+static={cls= "static";text= "图片路径";left=13;top=27;right=73;bottom=48;transparent=1;z=3};
+static2={cls= "static";text= "文件路径";left=13;top=64;right=73;bottom=90;transparent=1;z=4};
+static3={cls= "static";text= "生成路径";left=13;top=101;right=73;bottom=127;transparent=1;z=11};
+wairandom={cls= "plus";text= "小歪API";left=126;top=127;right=213;bottom=158;align= "left";color=14772545;font=LOGFONT(h=-14);iconStyle={align= "left";font=LOGFONT(h=-15;name= 'FontAwesome')};iconText= '\uF0C8 ';notify=1;textPadding={left=24};z=17}
 )
 /*}}*/
 
@@ -38,16 +39,15 @@ TObj.addTool(mainForm.randompic,"百度随机抓取图片，清晰度不高", 0x
 var pass = "qscWDV1#"
 mainForm.loadcode("/res/func.aardio")
 var filePathStr
-    
+
 var prcsRun = function(param) {
     var picPathStr = io.splitpath(mainForm.picPath.text)
     var bResult = false
-    var extName=picPathStr.ext
-    if(mainForm.mp4.checked)
-    {
-    	extName = '.mp4'
+    var extName = picPathStr.ext
+    if (mainForm.mp4.checked) {
+        extName = '.mp4'
     }
-    
+
     if (!mainForm.copyb.checked) {
         var picData = string.load(mainForm.picPath.text)
         var fileData = string.load(mainForm.filePath.text + param)
@@ -72,16 +72,16 @@ var compressCallback = function(str) {
     } else {
         mainForm.msgErr("压缩失败,可能文件太大,请手动压缩为7z格式文件", 2000)
     }
-    
+
     mainForm.gen.disabledText = null
-    
+
     if (bSuccess) {
         if (mainForm.randompic.checked) {
             mainForm.picPath.text = "随机图片"
         }
+        io.remove(mainForm.filePath.text + ".7z ")
         mainForm.msgOk("生成成功")
-    } 
-    io.remove(mainForm.filePath.text + ".7z ")
+    }
 }
 
 //生成按钮
@@ -117,7 +117,12 @@ mainForm.gen.oncommand = function(id, event) {
         //https://img0.baidu.com/it/u=2600281286,1294380535&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=407
         var tempfile = io.joinpath(fsys.getTempDir(),"temp.jpg")
         fsys.delete(tempfile)
-        baiduSearch()
+        if (mainForm.randompic.checked) {
+            baiduSearch()
+        } else {
+            waiApi()
+        }
+
         win.delay(1000)
         if (io.exist(tempfile)) {
             mainForm.picPath.text = tempfile
@@ -130,9 +135,8 @@ mainForm.gen.oncommand = function(id, event) {
     //若是7z格式则不压缩，直接合并
     filePathStr = io.splitpath(mainForm.filePath.text) //要隐藏的文件
     var fileext = string.lower(filePathStr.ext)
-    if(fileext='.7z' || fileext='.rar')
-    {
-     	if(prcsRun(''))
+    if (fileext = '.7z' || fileext = '.rar') {
+        if (prcsRun(''))
      	{
      		mainForm.msgOk("生成成功")
      	}else {
@@ -209,6 +213,18 @@ mainForm.plus.skin({
 })
 
 mainForm.randompic.skin({
+    color = {
+        active = 0xFF00FF00;
+        default = 0xFF4169E1;
+        disabled = 0xFF0000FF;
+        hover = 0xFFFF0000
+    };
+    checked = {
+        iconText = '\uF14A'
+    }
+})
+
+mainForm.wairandom.skin({
     color = {
         active = 0xFF00FF00;
         default = 0xFF4169E1;
@@ -303,6 +319,16 @@ mainForm.randompic.oncommand = function(id, event) {
     } else {
         mainForm.picPath.text = ""
     }
+    mainForm.wairandom.checked = false
+}
+
+mainForm.wairandom.oncommand = function(id, event) {
+    if (mainForm.wairandom.checked) {
+        mainForm.picPath.text = "随机图片"
+    } else {
+        mainForm.picPath.text = ""
+    }
+    mainForm.randompic.checked = false
 }
 
 mainForm.plus.oncommand = function(id, event) {
