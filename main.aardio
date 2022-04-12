@@ -8,25 +8,25 @@ import process;
 import inet.http;
 import win.ui.tooltip;
 /*DSG{{*/
-mainForm = win.form(text= "图片藏文件";right=427;bottom=205;bgcolor=16777215;border= "thin";max=false;mode= "popup")
+mainForm = win.form(text="图片藏文件";right=427;bottom=205;bgcolor=16777215;border="thin";max=false;mode="popup")
 mainForm.add(
-copyb={cls= "plus";text= "CMD合并";left=214;top=127;right=316;bottom=158;align= "left";color=14772545;font=LOGFONT(h=-14);iconStyle={align= "left";font=LOGFONT(h=-15;name= 'FontAwesome')};iconText= '\uF0C8 ';notify=1;textPadding={left=24};z=15};
-esc={cls= "plus";text= "退出";left=324;top=161;right=414;bottom=191;align= "left";bgcolor=-2004671;border={radius=5};color=16777215;db=1;font=LOGFONT(h=-13);iconStyle={align= "left";font=LOGFONT(h=-13;name= 'FontAwesome');padding={left=20}};iconText= '\uF00D';notify=1;textPadding={left=39};z=6};
-exp={cls= "plus";text= "解开";left=171;top=161;right=261;bottom=191;align= "left";bgcolor=-2004671;border={radius=5};color=16777215;db=1;font=LOGFONT(h=-13);iconStyle={align= "left";font=LOGFONT(h=-13;name= 'FontAwesome');padding={left=20}};iconText= '\uF065';notify=1;textPadding={left=39};z=10};
-filePath={cls= "plus";left=78;top=61;right=366;bottom=87;align= "right";bgcolor=16777215;border={bottom=1;color=-6908266};editable= "edit";iconColor=14772545;textPadding={top=6;bottom=2};z=5};
-gen={cls= "plus";text= "生成";left=15;top=161;right=105;bottom=191;align= "left";bgcolor=-2004671;border={radius=5};color=16777215;db=1;font=LOGFONT(h=-13);iconStyle={align= "left";font=LOGFONT(h=-13;name= 'FontAwesome');padding={left=20}};iconText= '\uF04B';notify=1;textPadding={left=39};z=1};
-genPath={cls= "plus";left=78;top=98;right=366;bottom=124;align= "right";bgcolor=16777215;border={bottom=1;color=-6908266};editable= "edit";iconColor=14772545;textPadding={top=6;bottom=2};z=12};
-mp4={cls= "plus";text= "存MP4";left=349;top=23;right=451;bottom=54;align= "left";color=14772545;font=LOGFONT(h=-14);iconStyle={align= "left";font=LOGFONT(h=-15;name= 'FontAwesome')};iconText= '\uF0C8 ';notify=1;textPadding={left=24};z=16};
-picPath={cls= "plus";left=78;top=23;right=302;bottom=49;align= "right";bgcolor=16777215;border={bottom=1;color=-6908266};editable= "edit";iconColor=14772545;textPadding={top=6;bottom=2};z=2};
-plus={cls= "plus";text= "94FBR.NET出品";left=305;top=131;right=422;bottom=155;color=32768;font=LOGFONT(h=-13);link=1;notify=1;textPadding={left=5};z=14};
-plus2={cls= "plus";text= "...";left=374;top=101;right=408;bottom=124;bgcolor=-2004671;border={radius=5};color=16777215;font=LOGFONT(h=-13);notify=1;z=13};
-plus5={cls= "plus";text= "...";left=309;top=27;right=343;bottom=50;bgcolor=-2004671;border={radius=5};color=16777215;font=LOGFONT(h=-13);notify=1;z=7};
-plus6={cls= "plus";text= "...";left=374;top=64;right=408;bottom=87;bgcolor=-2004671;border={radius=5};color=16777215;font=LOGFONT(h=-13);notify=1;z=8};
-randompic={cls= "plus";text= "Baidu随机图";left=15;top=127;right=129;bottom=158;align= "left";color=14772545;font=LOGFONT(h=-14);iconStyle={align= "left";font=LOGFONT(h=-15;name= 'FontAwesome')};iconText= '\uF0C8 ';notify=1;textPadding={left=24};z=9};
-static={cls= "static";text= "图片路径";left=13;top=27;right=73;bottom=48;transparent=1;z=3};
-static2={cls= "static";text= "文件路径";left=13;top=64;right=73;bottom=90;transparent=1;z=4};
-static3={cls= "static";text= "生成路径";left=13;top=101;right=73;bottom=127;transparent=1;z=11};
-wairandom={cls= "plus";text= "小歪API";left=126;top=127;right=213;bottom=158;align= "left";color=14772545;font=LOGFONT(h=-14);iconStyle={align= "left";font=LOGFONT(h=-15;name= 'FontAwesome')};iconText= '\uF0C8 ';notify=1;textPadding={left=24};z=17}
+copyb={cls="plus";text="CMD合并";left=214;top=127;right=316;bottom=158;align="left";color=14772545;font=LOGFONT(h=-14);iconStyle={align="left";font=LOGFONT(h=-15;name='FontAwesome')};iconText='\uF0C8 ';notify=1;textPadding={left=24};z=15};
+esc={cls="plus";text="退出";left=324;top=161;right=414;bottom=191;align="left";bgcolor=-2004671;border={radius=5};color=16777215;db=1;font=LOGFONT(h=-13);iconStyle={align="left";font=LOGFONT(h=-13;name='FontAwesome');padding={left=20}};iconText='\uF00D';notify=1;textPadding={left=39};z=6};
+exp={cls="plus";text="解开";left=170;top=161;right=260;bottom=191;align="left";bgcolor=-2004671;border={radius=5};color=16777215;db=1;font=LOGFONT(h=-13);iconStyle={align="left";font=LOGFONT(h=-13;name='FontAwesome');padding={left=20}};iconText='\uF065';notify=1;textPadding={left=39};z=10};
+filePath={cls="plus";left=78;top=61;right=366;bottom=87;align="right";bgcolor=16777215;border={bottom=1;color=-6908266};editable="edit";iconColor=14772545;textPadding={top=6;bottom=2};z=5};
+gen={cls="plus";text="生成";left=15;top=161;right=105;bottom=191;align="left";bgcolor=-2004671;border={radius=5};color=16777215;db=1;font=LOGFONT(h=-13);iconStyle={align="left";font=LOGFONT(h=-13;name='FontAwesome');padding={left=20}};iconText='\uF04B';notify=1;textPadding={left=39};z=1};
+genPath={cls="plus";left=78;top=98;right=366;bottom=124;align="right";bgcolor=16777215;border={bottom=1;color=-6908266};editable="edit";iconColor=14772545;textPadding={top=6;bottom=2};z=12};
+mp4={cls="plus";text="存MP4";left=349;top=23;right=451;bottom=54;align="left";color=14772545;font=LOGFONT(h=-14);iconStyle={align="left";font=LOGFONT(h=-15;name='FontAwesome')};iconText='\uF0C8 ';notify=1;textPadding={left=24};z=16};
+picPath={cls="plus";left=78;top=23;right=302;bottom=49;align="right";bgcolor=16777215;border={bottom=1;color=-6908266};editable="edit";iconColor=14772545;textPadding={top=6;bottom=2};z=2};
+plus={cls="plus";text="94FBR.NET出品";left=305;top=131;right=422;bottom=155;color=32768;font=LOGFONT(h=-13);link=1;notify=1;textPadding={left=5};z=14};
+plus2={cls="plus";text="...";left=374;top=101;right=408;bottom=124;bgcolor=-2004671;border={radius=5};color=16777215;font=LOGFONT(h=-13);notify=1;z=13};
+plus5={cls="plus";text="...";left=309;top=27;right=343;bottom=50;bgcolor=-2004671;border={radius=5};color=16777215;font=LOGFONT(h=-13);notify=1;z=7};
+plus6={cls="plus";text="...";left=374;top=64;right=408;bottom=87;bgcolor=-2004671;border={radius=5};color=16777215;font=LOGFONT(h=-13);notify=1;z=8};
+randompic={cls="plus";text="Baidu随机图";left=15;top=127;right=129;bottom=158;align="left";color=14772545;font=LOGFONT(h=-14);iconStyle={align="left";font=LOGFONT(h=-15;name='FontAwesome')};iconText='\uF0C8 ';notify=1;textPadding={left=24};z=9};
+static={cls="static";text="图片路径";left=13;top=27;right=73;bottom=48;transparent=1;z=3};
+static2={cls="static";text="文件路径";left=13;top=64;right=73;bottom=90;transparent=1;z=4};
+static3={cls="static";text="生成路径";left=13;top=101;right=73;bottom=127;transparent=1;z=11};
+wairandom={cls="plus";text="小歪API";left=126;top=127;right=213;bottom=158;align="left";color=14772545;font=LOGFONT(h=-14);iconStyle={align="left";font=LOGFONT(h=-15;name='FontAwesome')};iconText='\uF0C8 ';notify=1;textPadding={left=24};z=17}
 )
 /*}}*/
 
@@ -212,7 +212,7 @@ mainForm.plus.skin({
     }
 })
 
-mainForm.randompic.skin({
+var checkbox = {
     color = {
         active = 0xFF00FF00;
         default = 0xFF4169E1;
@@ -222,45 +222,13 @@ mainForm.randompic.skin({
     checked = {
         iconText = '\uF14A'
     }
-})
+}
+mainForm.randompic.skin(checkbox)
+mainForm.wairandom.skin(checkbox)
+mainForm.copyb.skin(checkbox)
+mainForm.mp4.skin(checkbox)
 
-mainForm.wairandom.skin({
-    color = {
-        active = 0xFF00FF00;
-        default = 0xFF4169E1;
-        disabled = 0xFF0000FF;
-        hover = 0xFFFF0000
-    };
-    checked = {
-        iconText = '\uF14A'
-    }
-})
-
-mainForm.copyb.skin({
-    color = {
-        active = 0xFF00FF00;
-        default = 0xFF4169E1;
-        disabled = 0xFF0000FF;
-        hover = 0xFFFF0000
-    };
-    checked = {
-        iconText = '\uF14A'
-    }
-})
-
-mainForm.mp4.skin({
-    color = {
-        active = 0xFF00FF00;
-        default = 0xFF4169E1;
-        disabled = 0xFF0000FF;
-        hover = 0xFFFF0000
-    };
-    checked = {
-        iconText = '\uF14A'
-    }
-})
-
-mainForm.gen.skin({
+var button = {
     background = {
         default = 0xFF4169E1;
         disabled = 0xFFCCCCCC;
@@ -270,46 +238,13 @@ mainForm.gen.skin({
         default = 0xFFFFFFFF;
         disabled = 0xFF0000FF
     }
-})
-
-mainForm.esc.skin(
-background = {
-    default = 0xFF4169E1;
-    disabled = 0xFFCCCCCC;
-    hover = 0xFF4682B4
-}; color = {
-    default = 0xFFFFFFFF;
-    disabled = 0xFF0000FF
-})
-mainForm.plus5.skin(
-background = {
-    default = 0xFF4169E1;
-    disabled = 0xFFCCCCCC;
-    hover = 0xFF4682B4
-}; color = {
-    default = 0xFFFFFFFF;
-    disabled = 0xFF0000FF
-})
-
-mainForm.plus6.skin(
-background = {
-    default = 0xFF4169E1;
-    disabled = 0xFFCCCCCC;
-    hover = 0xFF4682B4
-}; color = {
-    default = 0xFFFFFFFF;
-    disabled = 0xFF0000FF
-})
-
-mainForm.plus2.skin(
-background = {
-    default = 0xFF4169E1;
-    disabled = 0xFFCCCCCC;
-    hover = 0xFF4682B4
-}; color = {
-    default = 0xFFFFFFFF;
-    disabled = 0xFF0000FF
-})
+}
+mainForm.gen.skin(button)
+mainForm.exp.skin(button)
+mainForm.esc.skin(button)
+mainForm.plus5.skin(button)
+mainForm.plus6.skin(button)
+mainForm.plus2.skin(button)
 
 /*}}*/
 
